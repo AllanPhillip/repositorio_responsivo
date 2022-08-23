@@ -23,7 +23,7 @@ body {
 #header .profile img {
 	margin: 15px auto;
 	display: block;
-	width: 120px;
+	width: 140px;
 	border: 8px solid #2c2f3f;
 	border-radius: 50%;
 }
@@ -127,4 +127,52 @@ section#inicio div#arraste{
 section#inicio div#arraste a{
     text-decoration: none;
     color: #FFF;
+}
+
+i.menu-mobile{
+	position: fixed;
+	color: #FFF;
+	background-color: #252C90;
+	right: 1rem;
+	top: 1rem;
+	font-size: 1.5rem;
+	border-radius: 4rem;
+	cursor: pointer;
+	z-index: 10;
+	width: 45px;
+	height: 45px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-nav-active{
+	overflow: hidden;
+}
+
+.menu-nav-active #header{
+	left: 0;
+}
+
+@media (max-width: 1024px){
+	#header{
+		left: -300px;
+	}
+	
+	i.menu-mobile{
+		display: flex;
+	}
+
+	section#inicio h2{
+		font-size: 3.5rem;
+	}
+
+	section#inicio span#subtitle{
+		margin-right: 0;
+		font-size: 1rem;
+	}
+
+	#main{
+		margin-left: 0;
+	}
 }

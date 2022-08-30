@@ -259,3 +259,8 @@ i.menu-mobile {
 		display: none;
 	}
 }
+
+.btn.btn-primary:hover{
+	color: #0B5ED8;
+	background-color: #FFF;
+}
